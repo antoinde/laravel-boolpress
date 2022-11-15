@@ -30,3 +30,6 @@ group(function () {
 
 });
 
+Route::get('{any?}', function () {
+    return view('guests.home');
+})->where('any', '.*');
