@@ -49821,8 +49821,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Corsi\Corso Boolean\Lezioni\Esercitazioni\56 - 11 novembre 2022 - laravel-auth\laravel-auth\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! D:\Corsi\Corso Boolean\Lezioni\Esercitazioni\56 - 11 novembre 2022 - laravel-auth\laravel-auth\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Corsi\Corso Boolean\Lezioni\Esercitazioni\57 - 15 novembre 2022 - laravel-one-to-one\laravel-auth\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! D:\Corsi\Corso Boolean\Lezioni\Esercitazioni\57 - 15 novembre 2022 - laravel-one-to-one\laravel-auth\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
