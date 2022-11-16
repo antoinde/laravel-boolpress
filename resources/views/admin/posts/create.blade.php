@@ -16,6 +16,17 @@
         @enderror
     </div>
 
+    <div>
+        <label for="category_id">Categoria:</label>
+        <select name="category_id">
+            <option value="">--Seleziona--</option>
+            @foreach ($categories as $category)
+            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                
+            @endforeach
+        </select>
+    </div>
+
     <div class="form-group">
         <label for="content">Content</label>
         <textarea name="content" id="content" cols="30" rows="10"
