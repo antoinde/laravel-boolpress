@@ -16,6 +16,8 @@
                    @endif
 
                    {{ __('You are logged in as an administrator!') }}
+
+                   <img style="width: 100%;" src="{{ asset('img/dashboard.png') }}" alt="">
                </div>
            </div>
        </div>
