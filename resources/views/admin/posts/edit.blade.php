@@ -38,5 +38,6 @@
         </div>
 
         <input type="submit" value="Save" class="btn btn-primary">
+        <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Back to posts</a>
     </form>
 @endsection
