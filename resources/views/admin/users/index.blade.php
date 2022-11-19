@@ -8,11 +8,14 @@
         padding: 10px;
         display: flex;
         column-gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
         ">
             <span><strong>ID:</strong> {{ $user->id }}</span>
             <span><strong>NAME:</strong> {{ $user->name }}</span>
             <span><strong>EMAIL:</strong> {{ $user->email }}</span>
             <span><strong>PASSWORD:</strong> {{ $user->password }}</span>
+
         </div>
     @endforeach
 @endsection
