@@ -27,6 +27,7 @@
                 </div>
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-12">
                 <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Back to posts</a>
