@@ -103,7 +103,7 @@ class PostController extends Controller
             $form_data['slug'] = $slug;
         }
         $post->update($form_data);
-        return redirect()->route('admin.posts.show', $post->id);
+        return redirect()->route('admin.posts.show', $post->slug);
     }
 
     /**

@@ -22,16 +22,16 @@ class PostSeeder extends Seeder
         for($i=0; $i<50; $i++){
             
             $post = new Post();
-            $post->title=$faker->realText($maxNbChars=200, $indexSize=20);
+            $post->title=$faker->realText($maxNbChars=200, $indexSize=2);
             $post->content=$faker->text();
 
             $slug=Str::slug($post->title);
             $slug_base=$slug;
             $counter=1;
             $existingPost=Post::where('slug', $slug)->first();
-            while($existingPost){
+            while($existingPost) {
                 $slug=$slug_base . '_' . $counter;
-                $existingPost= Post::where('slug', $anotherSlug)->first();
+                $existingPost= Post::where('slug', $slug)->first();
                 $counter++;
             }
 
