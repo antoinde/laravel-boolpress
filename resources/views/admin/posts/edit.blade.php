@@ -37,14 +37,6 @@
             @enderror
         </div>
 
-        <div class="form-group">
-            <label for="image">Image</label>
-            <input type="file" name="image" id="image" class="form-control-file">
-            @error('image')
-                <div class="alert alert-danger">{{ $message }}</div>
-            @enderror
-        </div>
-
         <input type="submit" value="Save" class="btn btn-primary">
     </form>
 @endsection
