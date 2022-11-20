@@ -1,3 +1,1 @@
-aggancio di vue , modello Post completo di migration, controller ed eventuale seeder.
-
-pushed on new repo
+Branch on a new repo laravel-many-to-many
