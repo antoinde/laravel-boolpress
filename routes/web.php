@@ -29,6 +29,7 @@ group(function () {
     Route::get('/', 'HomeController@index')->name('index');
     Route::resource('posts', 'PostController');
     Route::resource('users', 'UserController');
+    Route::resource('categories', 'CategoryController');
 
 });
 
