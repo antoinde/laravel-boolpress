@@ -22,6 +22,12 @@
                             <p>Nessuna categoria</p>
                         @endif
 
+                        <h4><strong>TAGS:</strong> </h4>
+                        <div>
+                            @foreach($post->tags as $tag)
+                                <span>#{{ $tag->name }} </span>
+                            @endforeach
+                        </div>
 
                     </div>
                 </div>
@@ -31,6 +37,7 @@
         <div class="row">
             <div class="col-12">
                 <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Back to posts</a>
+                <a class="btn btn-warning" href="{{ route('admin.posts.edit', ['post' => $post->id]) }}">Edit</a>
             </div>
         </div>
     </div>

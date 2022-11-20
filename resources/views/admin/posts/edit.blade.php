@@ -37,6 +37,47 @@
             @enderror
         </div>
 
+        {{-- TAGS  --}}
+        @if($errors->any())
+            <div class="form-group">
+                <div><label>Tags</label></div>
+        
+                @foreach($tags as $tag)
+        
+                <input
+                {{  in_array($tag->id, old('tags', [])) ? 'checked' : '' }}
+                type="checkbox" name="tags[]" value="{{$tag->id}}">
+                <label for="tags[]">{{ $tag->name }}</label>
+                
+                @endforeach
+                
+                @error('tags')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </div>
+        @else
+            <div class="form-group">
+                <div><label>Tags</label></div>
+        
+                @foreach($tags as $tag)
+        
+                <input
+                {{ $post->tags->contains($tag) ? 'checked' : '' }}
+                type="checkbox" name="tags[]" value="{{$tag->id}}">
+                <label for="tags[]">{{ $tag->name }}</label>
+                
+                @endforeach
+                
+                @error('tags')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </div>
+        @endif
+
+        
+        {{-- END-TAGS  --}}
+
+
         <input type="submit" value="Save" class="btn btn-primary">
         <a class="btn btn-primary" href="{{ route('admin.posts.index') }}">Back to posts</a>
     </form>

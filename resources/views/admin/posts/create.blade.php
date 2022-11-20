@@ -47,6 +47,23 @@
         @enderror
     </div>
 
+    <div class="form-group">
+        <div><label>Tags</label></div>
+
+        @foreach($tags as $tag)
+
+        <input
+        {{  in_array($tag->id, old('tags', [])) ? 'checked' : '' }}
+        type="checkbox" name="tags[]" value="{{$tag->id}}">
+        <label for="tags[]">{{ $tag->name }}</label>
+        
+        @endforeach
+        
+        @error('tags')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
+    </div>
+
     <input type="submit" value="Save" class="btn btn-primary">
 </form>
 
