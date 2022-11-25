@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <div class="header">
+            <h1>Posts Component</h1>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-8">
 
@@ -81,5 +84,16 @@
 </script>
 
 <style lang="scss" scoped>
-
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+.card{
+    border: 3px solid black;
+    margin: 5px 0px;
+    padding: 5px;
+    background-color: rgb(130, 160, 132);
+}
 </style>

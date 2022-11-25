@@ -22,3 +22,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 // Route::get('/posts', 'Api\PostController@index');
 Route::resource('posts', 'Api\PostController', ['only'=> ['index', 'show']]);
+
+
+// se dopo l'inidirizzo localhost8000:api/scrivo_qualsiasi_cosa, mi porta alla home
+Route::get('{any?}', function () {
+    return 'Error 404: page not found';
+})->where('any', '.*');
