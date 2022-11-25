@@ -11,6 +11,10 @@ import NotFoundComponent from './components/NotFoundComponent';
 Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
+        //qui si crea il vero collegamento all'indirizzo localhost:8000/guest#/
+        //qui si crea il vero collegamento all'indirizzo localhost:8000/guest#/posts
+        //qui si crea il vero collegamento all'indirizzo localhost:8000/guest#/about
+        //qui si crea il vero collegamento all'indirizzo localhost:8000/guest#/contacts
         { path: '/', name: 'home', component: HomeComponent },
         { path: '/posts', name: 'posts', component: PostsComponent },
         { path: '/about', name: 'about', component: AboutComponent },
