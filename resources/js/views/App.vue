@@ -1,16 +1,18 @@
 <template>
     <div>
-        <PostsComponent/>
+        <!-- <PostsComponent/> -->
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-import PostsComponent from '../components/PostsComponent.vue';
+// import PostsComponent from '../components/PostsComponent.vue';
+
  export default {
     name: 'App',
-    components: {
-        PostsComponent
-    }
+    // components: {
+    //     PostsComponent
+    // }
  }
 </script>
 
